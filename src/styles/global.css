@@ -1,0 +1,82 @@
+body{
+    background: #fff;
+    font-family: 'Roboto';
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.content .heading h1{
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+
+.content .contact-btn{
+    width: 150px;
+    margin-bottom: 30px;
+    padding: 8px 0px;
+    background: none;
+    border: solid 1px #000;
+    border-radius: 12px;
+    transition: all 0.4s;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.content .contact-btn:hover{
+    background: #000;
+    border: solid 1px #000;
+    color: #fff;
+}
+
+.content .show-email{
+    width: 250px;
+}
+
+.content .hat{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.content .links{
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+
+.content .links a{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.content .links a .icon{
+    margin-right: 5px;
+}
+
+.skill{
+    font-size: 30px;
+    width: 160px;
+    color: rgb(182, 182, 182);
+    z-index: -500;
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+
+.skill.show{
+    opacity: 1;
+}
+
+.skill.hidden{
+    opacity: 0;
+}
