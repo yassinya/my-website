@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Skill extends React.Component{
+class Competence extends React.Component{
 
     state = {
         show: false,
@@ -15,7 +15,7 @@ class Skill extends React.Component{
     }
 
     render(){
-        return <span style={{position: 'absolute', left: this.state.randPos.left, top: this.state.randPos.top }} className={ this.state.show ? "skill show" : "skill hidden" }>{this.props.skillName}</span>
+        return <span style={{position: 'absolute', left: this.state.randPos.left, top: this.state.randPos.top }} className={ this.state.show ? "competence show" : "competence hidden" }>{this.props.competenceName}</span>
     }
 
     fadeIn = () => {
@@ -40,6 +40,6 @@ class Skill extends React.Component{
       }
 }
 
-Skill.defaultProps  = {interval: 6000}
+Competence.defaultProps  = {interval: 6000}
 
-export default Skill
+export default Competence

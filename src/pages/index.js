@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import { FaTwitter, FaMapMarkerAlt, FaGithub } from 'react-icons/fa';
-import Skill from '../components/skill';
+import Competence from '../components/competence';
 
 export default class IndexPage extends React.Component  {
 
@@ -29,16 +29,16 @@ export default class IndexPage extends React.Component  {
           <a href="https://github.com/yassinya" target="_blank"><FaGithub className="icon"/> yassinya</a>
         </div>
       </div>
-      <Skill skillName="PHP" interval="4900"/>
-      <Skill skillName="Laravel" interval="6100"/>
-      <Skill skillName="CSS" interval="5000"/>
-      <Skill skillName="HTML" interval="5600"/>
-      <Skill skillName="Javascript" interval="6800"/>
-      <Skill skillName="React" interval="4800"/>
-      <Skill skillName="Linux" interval="9000"/>
-      <Skill skillName="SQL" interval="7200"/>
-      <Skill skillName="GIT" interval="6200"/>
-      <Skill skillName="Nginx" interval="5000"/>
+      <Competence competenceName="PHP" interval="4900"/>
+      <Competence competenceName="Laravel" interval="6100"/>
+      <Competence competenceName="CSS" interval="5000"/>
+      <Competence competenceName="HTML" interval="5600"/>
+      <Competence competenceName="Javascript" interval="6800"/>
+      <Competence competenceName="React" interval="4800"/>
+      <Competence competenceName="Linux" interval="9000"/>
+      <Competence competenceName="SQL" interval="7200"/>
+      <Competence competenceName="GIT" interval="6200"/>
+      <Competence competenceName="Nginx" interval="5000"/>
     </Layout>
   )}
 

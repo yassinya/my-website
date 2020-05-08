@@ -65,7 +65,7 @@ body{
     margin-right: 5px;
 }
 
-.skill{
+.competenceName{
     font-size: 30px;
     width: 160px;
     color: rgb(182, 182, 182);
@@ -74,10 +74,10 @@ body{
     transition: opacity 2.5s;
 }
 
-.skill.show{
+.competenceName.show{
     opacity: 1;
 }
 
-.skill.hidden{
+.competenceName.hidden{
     opacity: 0;
 }
