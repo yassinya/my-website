@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import { FaTwitter, FaMapMarkerAlt, FaGithub } from 'react-icons/fa';
-import Skill from '../components/Skill';
+import Skill from '../components/skill';
 
 export default class IndexPage extends React.Component  {
 
@@ -19,8 +19,8 @@ export default class IndexPage extends React.Component  {
         <div className="heading">
           <h1>Hi there, I am Yassin Youssouf</h1>
         </div>
-        <div className="hat">
-          <span>Back end developer</span>
+        <div className="job">
+          <span>Full Stack Web Developer</span>
         </div>
         <a  href={this.state.showEmail ? "mailto:"+this.state.email : null} className={this.state.showEmail ? 'contact-btn show-email' : 'contact-btn'} onClick={this.showEmailAddress}>{this.state.showEmail ? this.state.email : 'Get in touch'}</a>
         <div className="links">
