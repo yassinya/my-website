@@ -17,7 +17,7 @@ export default class IndexPage extends React.Component  {
     <Layout>
       <div className="content">
         <div className="heading">
-          <h1>Hi there, I am Yassin Youssouf</h1>
+          <h1>Hi there, I'm Yassin Youssouf</h1>
         </div>
         <div className="job">
           <span>Full Stack Web Developer</span>
