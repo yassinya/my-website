@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
+import thumbnail from '../images/thumbnail.png'
 
 const SEO = ({ title, description, image, article, pathname }) => {
     const { location } = useLocation()
@@ -13,26 +14,24 @@ const SEO = ({ title, description, image, article, pathname }) => {
         titleTemplate,
         defaultDescription,
         siteUrl,
-        defaultImage,
         twitterUsername,
       } = site.siteMetadata
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}`,
       }
       return (
         <Helmet title={seo.title} titleTemplate={titleTemplate}>
           <meta name="description" content={seo.description} />
-          <meta name="image" content={seo.image} />
+          <meta name="image" content={thumbnail} />
           {seo.url && <meta property="og:url" content={seo.url} />}
           {(article ? true : null) && <meta property="og:type" content="article" />}
           {seo.title && <meta property="og:title" content={seo.title} />}
           {seo.description && (
             <meta property="og:description" content={seo.description} />
           )}
-          {seo.image && <meta property="og:image" content={seo.image} />}
+          {<meta property="og:image" content={thumbnail} />}
           <meta name="twitter:card" content="summary_large_image" />
           {twitterUsername && (
             <meta name="twitter:creator" content={twitterUsername} />
@@ -41,7 +40,7 @@ const SEO = ({ title, description, image, article, pathname }) => {
           {seo.description && (
             <meta name="twitter:description" content={seo.description} />
           )}
-          {seo.image && <meta name="twitter:image" content={seo.image} />}
+          {<meta name="twitter:image" content={thumbnail} />}
         </Helmet>
       )
   }
@@ -54,7 +53,6 @@ query SEO {
         defaultTitle: title
         defaultDescription: description
         siteUrl: url
-        defaultImage: image
         twitterUsername
     }
     }

@@ -4,7 +4,6 @@ module.exports = {
     description: `Hello, I am Yassin Youssouf and I am full stack web developper from Djibouti`,
     twitterUsername: `yassin_dev`,
     url: 'https:yassin.dev',
-    image: '/thumbnail.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,5 +31,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-46987859-4",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Defers execution of google analytics script after page load
+        defer: false,
+      },
+    },
   ],
 }
