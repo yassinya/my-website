@@ -38,12 +38,6 @@ body{
     cursor: pointer;
 }
 
-.content .contact-btn:hover{
-    /* background: #fff;
-    border: solid 1px #000;
-    color: #fff; */
-}
-
 .content .show-email{
     width: 250px;
 }
@@ -82,4 +76,11 @@ body{
 
 .competence.hidden{
     opacity: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content .heading h1{
+        font-size: 37px;
+    }
 }
